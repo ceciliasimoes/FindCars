@@ -17,12 +17,14 @@ public class Veiculo {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
+    private String valor;
     private String marca;
     private String modelo;
     private Integer ano;
     private String combustivel;
 
     public Veiculo(VeiculoDTO dto){
+        this.valor = dto.valor();
         this.marca = dto.marca();
         this.modelo = dto.modelo();
         this.ano = dto.ano();
