@@ -20,7 +20,7 @@ public class Veiculo {
     private String valor;
     private String marca;
     private String modelo;
-    private Integer ano;
+    private int ano;
     private String combustivel;
 
     public Veiculo(VeiculoDTO dto){
